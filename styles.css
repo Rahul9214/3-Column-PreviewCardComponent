@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, 
+button {
+    font-family: inherit;
+}
+
+/* Colors */
+:root {
+    --almost-white: #F2F2F2;
+    --orange: #E28625;
+    --petrol: #006971;
+    --dark-petrol: #004140;
+}
+
+/* Typography */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--almost-white);
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+}
+
+/*  Background */
+
+body {
+    background-color: var(--almost-white);
+}
+
+/* Preview Card Component */
+
+body {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 925px) {
+        height: 100vh;
+        align-items: center;
+    }
+}
+
+.preview_card-component {
+    width: 327px; 
+    margin: 88px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 950px) {
+        width: 920px; 
+        margin: unset;
+        flex-direction: row;
+    }
+}
+
+/* Sections */
+section {
+    width: 100%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+img {
+    width: 64px;
+}
+
+p {
+    margin-top: 25px;
+}
+
+footer {
+    margin-top: 25px;
+
+    @media (min-width: 950px) {
+        margin-top: 83px;
+    }
+}
+
+button {
+    width: 146px;
+    height: 48px;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2px solid var(--almost-white);
+}
+
+/* sedans */
+.sedans {
+    background-color: var(--orange);
+}
+
+.sedans button {
+    color: var(--orange);
+}
+
+.sedans button:hover {
+    color: var(--almost-white);
+    background-color: var(--orange);
+}
+
+/* SUVs */
+.suvs {
+    background-color: var(--petrol);
+}
+
+.suvs button {
+    color: var(--petrol);
+}
+
+.suvs button:hover {
+    color: var(--almost-white);
+    background-color: var(--petrol);
+}
+
+/* Luxury */ 
+.luxury {
+    background-color: var(--dark-petrol);
+}
+
+.luxury button {
+    color: var(--dark-petrol);
+}
+
+.luxury button:hover {
+    color: var(--almost-white);
+    background-color: var(--dark-petrol);
+}
